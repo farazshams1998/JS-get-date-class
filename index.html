@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// var today = new Date();
+// var now = today.toString();
+// console.log(now);
+// var copy = now.slice(1,9)
+// console.log(copy);
+
+//document.write(dat.getHours())
+
+// var dayNames = ["Sun" , "Mon" , "Tue" , "Wed" , "Thu" , "Fri" , "Sat"];
+// var dat = new Date();
+// var today = dayNames[dat.getDay()]
+// document.write(today)
+
+// if (today === "Sun"){
+//     alert("Yahoooo! Its Sunday")
+// }
+
+// var monthNames = ["Jan" , "Feb" , "Mar" , "Apr" , "May" , "June" , "July" , "August" , "Sep" , "Oct" , "Nov", "Dec"];
+// var now = new Date();
+// var month = monthNames[now.getMonth()];
+// console.log(month);
+
+var now = new Date();
+// console.log(now);
+var hrs = now.getHours();
+//console.log(hrs);
+var min = now.getMinutes();
+//console.log(hrs + ":" + min);
+var sec = now.getSeconds()
+if (hrs < 11){
+    document.write(hrs + ":" + min + ":" + sec + " " + "AM");
+}
+if (hrs > 11){
+    document.write(hrs + ":" + min + ":" + sec + " " + "PM");
+}
+
+    </script>   
+</body>
+</html>                                             
